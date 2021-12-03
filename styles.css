@@ -1,0 +1,137 @@
+@import url("https://fonts.google.com/specimen/Red+Hat+Display");
+
+p,
+span {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: var(--desaturated-blue);
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --transparent-bright-blue: hsl(245, 75%, 52%, 0.75);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+/*Alignment / Color*/
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+  background-image: url('./images/pattern-background-desktop.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-header-img {
+  border-radius: 15px 15px 0 0;
+  width: 350px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.5);
+  max-width: 350px;
+}
+
+.plan {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--very-pale-blue);
+  margin: 20px 25px;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.plan-description {
+  flex-grow: 2;
+  margin-left: 20px;
+}
+
+.actions {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0 25px;
+  margin: 15px 0;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 12px 0;
+  border: 0;
+  font-weight: 900;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.btn-success {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  box-shadow: 0 5px 15px hsla(0, 0%, 0%, 0.5);
+}
+
+.btn-success:hover {
+  background-color: var(--transparent-bright-blue);
+}
+
+.btn-cancel {
+  color: var(--desaturated-blue);
+}
+
+.btn-cancel:hover {
+  color: var(--dark-blue);
+}
+
+/*Text*/
+.title {
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  color: var(--dark-blue);
+}
+
+.description {
+  text-align: center;
+  line-height: 150%;
+}
+
+.bold {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.change-plan {
+  text-decoration: underline;
+  color: var(--bright-blue);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.change-plan:hover {
+  text-decoration: none;
+  color: var(--transparent-bright-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.attribution a {
+  color: var(--bright-blue)
+}
