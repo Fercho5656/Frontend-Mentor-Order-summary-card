@@ -18,10 +18,10 @@ span {
 
 /*Alignment / Color*/
 body {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
   background-color: var(--pale-blue);
   background-image: url('./images/pattern-background-desktop.svg');
   background-position: center;
